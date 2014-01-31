@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="@string/game_inputwords"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/game_inputwords_highscore_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:text="@+id/game_inputwords_highscore_tv"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/title_buttom_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/game_inputwords_highscore_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="@string/game_inputwords_time"
+            android:textSize="12dp" />
+
+        <ProgressBar
+            android:id="@+id/game_inputwords_time_line"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="20dp"
+		style="@android:style/Widget.ProgressBar.Horizontal"
+            android:max="100"
+	    android:progress="100"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/game_inputwords_score_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="right"
+            android:minWidth="80dp"
+            android:text="@string/game_score"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.fax.weihanstudy.games.AnimView
+            android:id="@+id/game_inputwords_aimtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center" >
+
+            <com.fax.weihanstudy.MyTextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="30dp" />
+        </com.fax.weihanstudy.games.AnimView>
+    </FrameLayout>
+
+    <com.fax.weihanstudy.MyTextView
+        android:id="@+id/game_inputwords_remind_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16dp" />
+
+    <com.fax.weihanstudy.MyEditText
+        android:id="@+id/game_inputwords_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:singleLine="true" >
+        <requestFocus />
+    </com.fax.weihanstudy.MyEditText>
+
+    <FrameLayout
+        android:id="@+id/activity_inputbord_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

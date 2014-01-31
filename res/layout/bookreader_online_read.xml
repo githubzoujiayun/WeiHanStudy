@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+<FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+        android:background="@color/title_bg"
+        android:orientation="horizontal">
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="在线阅读"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+<Button 
+    android:id="@+id/bookreader_online_opendict"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="10dp"
+            android:onClick="onclick"
+            android:text="打开词典"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_blue"/>
+</FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/title_buttom_line" />
+    <ProgressBar 
+        android:id="@android:id/progress"
+        android:max="100"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="3dp" />
+	<WebView
+            android:id="@+id/webview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+</LinearLayout>

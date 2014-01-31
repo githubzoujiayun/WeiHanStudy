@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe9e6e2"
+    android:padding="20dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+   
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginBottom="20dp"
+	    android:textSize="50dp"
+	    android:text="打字游戏" 
+    android:shadowColor="@color/app_blue"    
+    android:shadowDx="3"    
+    android:shadowDy="3"         
+    android:shadowRadius="2"/>
+	
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    android:padding="6dp"
+	    android:textSize="16dp"
+	    android:background="@drawable/item_layout1_bg"
+	    android:text="    打字游戏是一个练习打字的小游戏，可以用来熟悉维文键盘的布局、维语字母的变形以及常用汉语的拼音。\n    在规定的时间内正确键入显示的字，来挑战最高分吧!" />
+	<Button 
+	    android:id="@+id/content_game_start_weiinput"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginTop="20dp"
+            android:onClick="click_in_game_view"
+            android:background="@drawable/btn_blue"
+            
+            android:textColor="@android:color/white"
+            android:padding="6dp"
+	    android:textSize="20dp"
+	    android:text="开始维语打字"/>
+	<Button 
+	    android:id="@+id/content_game_start_haninput"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginTop="10dp"
+            android:onClick="click_in_game_view"
+            android:background="@drawable/btn_blue"
+            
+            android:textColor="@android:color/white"
+            android:padding="6dp"
+	    android:textSize="20dp"
+	    android:text="开始汉语打字"/>
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginTop="10dp"
+            android:background="@drawable/btn_blue"
+            android:textColor="@android:color/white"
+            android:padding="6dp"
+	    android:textSize="20dp"
+	    android:enabled="false"
+	    android:text="更多游戏即将到来..."/>
+</LinearLayout>

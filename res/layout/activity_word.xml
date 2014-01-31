@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe9e6e2"
+    android:orientation="vertical" >
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="查看单词"
+        android:background="@color/title_bg"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/title_buttom_line" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+    <com.fax.weihanstudy.MyTextView 
+        android:id="@+id/dic_word_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:minLines="2"
+    android:textStyle="bold"
+    android:textSize="26dp"/>
+	<ImageButton 
+        android:id="@+id/dic_word_addto_wordsbook"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:onClick="onclick"
+    android:background="@drawable/gray_bg_when_press"
+    android:src="@drawable/dictword_addto_wordsbook"/>
+	<ImageButton 
+        android:id="@+id/dic_word_removefrom_wordsbook"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:onClick="onclick"
+    android:background="@drawable/gray_bg_when_press"
+    android:src="@drawable/dictword_removefrom_wordsbook"/>
+</LinearLayout>
+	<com.fax.weihanstudy.MyTextView
+	    android:id="@+id/dic_word_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+	    android:background="@drawable/item_layout1_bg"
+	    android:padding="10dp"
+	    android:textSize="16dp" />
+
+</LinearLayout>

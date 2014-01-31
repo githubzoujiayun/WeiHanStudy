@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">维汉学习通</string>
+    <string name="dictionary">词典</string>
+    <string name="useful_sentence">常用语</string>
+    <string name="words_book">单词本</string>
+    <string name="books">图书</string>
+    
+    
+    <string name="common_ok">确定</string>
+    
+    <string name="games">小游戏</string>
+    <string name="game_high_score">最高分</string>
+    <string name="gameover">游戏结束</string>
+    <string name="game_score">分数</string>
+    <string name="game_inputwords">打字游戏</string>
+    <string name="game_inputwords_time">时间</string>
+
+    
+    <string name="please_input_content">请输入查询内容</string>
+    
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+</resources>

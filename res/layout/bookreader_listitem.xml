@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/bookreader_listitem_img"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:padding="6dp"
+        android:src="@drawable/loadimg_loading" />
+
+    <com.fax.weihanstudy.MyTextView
+        android:id="@+id/bookreader_listitem_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/bookreader_listitem_img"
+        android:layout_toRightOf="@+id/bookreader_listitem_img"
+        android:gravity="center_vertical|left"
+        android:layout_margin="4dp"
+        android:maxLines="2"
+        android:text="@+id/bookreader_listitem_title"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <com.fax.weihanstudy.MyTextView
+        android:id="@+id/bookreader_listitem_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:maxLines="2"
+        android:layout_below="@+id/bookreader_listitem_title"
+        android:layout_toRightOf="@+id/bookreader_listitem_img"
+        android:layout_toLeftOf="@+id/bookreader_listitem_btn"
+        android:text="@+id/bookreader_listitem_author"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/bookreader_listitem_filesize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/bookreader_listitem_img"
+        android:layout_alignBottom="@+id/bookreader_listitem_img"
+        android:text="@+id/bookreader_listitem_filesize"
+        android:textSize="10sp" />
+	
+    <Button
+        android:id="@+id/bookreader_listitem_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_margin="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/bookreader_listitem_filesize" 
+        android:textColor="@android:color/white"
+        android:text="下载中98%"
+        android:background="@drawable/btn_blue"/>
+
+</RelativeLayout>

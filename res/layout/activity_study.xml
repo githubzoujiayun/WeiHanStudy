@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/activity_titles"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bg"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/activity_title_dic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/title_but_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:onClick="click_in_title"
+            android:padding="0dp"
+            android:text="@string/dictionary"
+            android:textColor="@color/title_but_textcolor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/activity_title_useful"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/title_but_bg"
+            android:gravity="center"
+            android:onClick="click_in_title"
+            android:padding="0dp"
+            android:text="@string/useful_sentence"
+            android:textColor="@color/title_but_textcolor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/activity_title_wordsbook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/title_but_bg"
+            android:gravity="center"
+            android:onClick="click_in_title"
+            android:padding="0dp"
+            android:text="@string/words_book"
+            android:textColor="@color/title_but_textcolor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/activity_title_books"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/title_but_bg"
+            android:gravity="center"
+            android:onClick="click_in_title"
+            android:padding="0dp"
+            android:text="@string/books"
+            android:textColor="@color/title_but_textcolor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/activity_title_games"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/title_but_bg"
+            android:gravity="center"
+            android:onClick="click_in_title"
+            android:padding="0dp"
+            android:text="@string/games"
+            android:textColor="@color/title_but_textcolor"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_btn_div" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_btn_div" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_btn_div" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_btn_div" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/activity_views_context"
+        android:background="@color/title_buttom_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_views_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_inputbord_contain"
+        android:layout_below="@+id/activity_titles"
+        android:background="@android:color/white" >
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/activity_inputbord_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </FrameLayout>
+
+</RelativeLayout>

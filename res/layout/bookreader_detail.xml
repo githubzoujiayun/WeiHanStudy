@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bg"
+        android:orientation="vertical" >
+
+        <com.fax.weihanstudy.MyTextView
+            android:id="@+id/bookreader_detail_bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@+id/bookreader_detail_bookname"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <com.fax.weihanstudy.MyTextView
+            android:id="@+id/bookreader_detail_anthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="@+id/bookreader_detail_anthor"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/title_buttom_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="封面"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/bookreader_detail_img"
+                android:layout_width="200dp"
+                android:layout_height="256dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/loadimg_loading" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="简介"
+                android:textColor="@android:color/white" />
+
+            <com.fax.weihanstudy.MyTextView
+                android:id="@+id/bookreader_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="@+id/bookreader_detail_info"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/title_buttom_line" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_bg"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+        <Button
+            android:id="@+id/bookreader_online_reader"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_for_controlbtn"
+            android:gravity="center"
+            android:onClick="onclick"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:text="在线阅读"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bookreader_detail_btn_continue"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_bg_when_press"
+                android:onClick="onclick"
+                android:src="@drawable/control_play"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/bookreader_detail_btn_pause"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_bg_when_press"
+                android:onClick="onclick"
+                android:src="@drawable/control_pause"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <ProgressBar
+                    android:id="@+id/bookreader_detail_progress"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/progress_bar" />
+
+                <Button
+                    android:id="@+id/bookreader_detail_control_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_blue_for_controlbtn"
+                    android:gravity="center"
+                    android:onClick="onclick"
+                    android:singleLine="true"
+                    android:text="@+id/bookreader_detail_bookname"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/bookreader_detail_btn_stop"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_bg_when_press"
+                android:onClick="onclick"
+                android:src="@drawable/control_stop"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

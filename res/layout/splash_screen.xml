@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_screen_bg">
+    <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher_big"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="30dp"
+    android:layout_above="@android:id/text1"/>
+    <TextView 
+        android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="48dp"
+    android:layout_centerInParent="true"
+    android:textColor="#ffffffff"
+    android:text="@string/app_name"
+    android:shadowColor="#ff000000"    
+    android:shadowDx="5"    
+    android:shadowDy="5"         
+    android:shadowRadius="3"/>
+    <ImageView 
+        android:id="@android:id/text2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/start_screen_text2"
+    android:layout_marginTop="30dp"
+    android:layout_below="@android:id/text1"
+    android:layout_centerHorizontal="true"/>
+    
+    <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14dp"
+    android:layout_marginBottom="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:textColor="@android:color/darker_gray"
+    android:text="好好学习 天天向上"/>
+</RelativeLayout>

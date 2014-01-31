@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/dic_change_input"
+            android:onClick="click_in_dic_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="0dp"
+            android:src="@drawable/icon_hanwei"
+            android:background="@drawable/btn_bg_more"/>
+
+        <com.fax.weihanstudy.MyEditText
+            android:id="@+id/dic_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:hint="@string/please_input_content" />
+
+        <ImageButton
+            android:id="@+id/dic_search"
+            android:onClick="click_in_dic_view"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/icon_search"
+            android:background="@drawable/btn_blue" />
+    </LinearLayout>
+
+	<com.fax.weihanstudy.dict.DictListView
+            android:id="@+id/dic_listview"
+            android:fastScrollEnabled="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" >
+	    
+	</com.fax.weihanstudy.dict.DictListView>
+	
+    <LinearLayout 
+        android:id="@+id/dic_download_dict"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:onClick="click_in_dic_view"
+        android:background="@drawable/gray_bg_when_press"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:gravity="center"> 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableLeft="@android:drawable/ic_menu_upload"
+            android:drawablePadding="20dp"
+            android:textSize="18sp"
+            android:text="下载离线词典"/>
+    </LinearLayout> 
+</LinearLayout>
